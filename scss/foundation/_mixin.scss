@@ -1,0 +1,7 @@
+@use "../foundation/_variable" as *;
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
